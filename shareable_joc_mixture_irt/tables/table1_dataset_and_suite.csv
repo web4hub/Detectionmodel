@@ -1,0 +1,10 @@
+Quantity,Value
+Benchmark,All non-saturated GSM8K items from metabench/Open LLM Leaderboard response data
+Models/checkpoints,"6,014"
+Analyzed items,"1,214"
+Observed model-item cells,"7,300,996"
+Inferred model families,"5,233"
+Training observations,"6,570,896"
+Holdout observations,"730,100"
+Model/prior runs,45
+Heldout fraction,0.10

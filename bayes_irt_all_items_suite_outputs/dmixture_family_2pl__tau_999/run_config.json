@@ -1,0 +1,43 @@
+{
+  "run_name": "dmixture_family_2pl__tau_999",
+  "prior_name": "tau_999",
+  "model": {
+    "kind": "dmixture_family_2pl",
+    "difficulty_sd": 2.0,
+    "discrimination_log_mean": 0.0,
+    "discrimination_log_sd": 0.5,
+    "lower_asymptote_alpha": 0.5,
+    "lower_asymptote_beta": 30.0,
+    "base_contamination_rate": 0.01,
+    "contamination_logit_sd": 1.0,
+    "exposure_effect_sd": 0.75,
+    "tau": 0.999,
+    "probability_epsilon": 1e-06
+  },
+  "fit": {
+    "steps": 1000,
+    "learning_rate": 0.03,
+    "batch_size": 50000,
+    "seed": 123,
+    "device": "cpu",
+    "progress": false
+  },
+  "train_metrics": {
+    "n_obs": 6570896,
+    "log_likelihood": -2302043.0,
+    "mean_log_likelihood": -0.35033929347991943,
+    "brier": 0.11165224760770798,
+    "accuracy_0_5": 0.8391278982162476,
+    "observed_mean": 0.4049103856086731,
+    "predicted_mean": 0.4036533236503601
+  },
+  "holdout_metrics": {
+    "n_obs": 730100,
+    "log_likelihood": -256942.15625,
+    "mean_log_likelihood": -0.35192734003067017,
+    "brier": 0.11212562769651413,
+    "accuracy_0_5": 0.8385125398635864,
+    "observed_mean": 0.40364333987236023,
+    "predicted_mean": 0.40297630429267883
+  }
+}

@@ -1,0 +1,11 @@
+Model family,Mixture runs,Top-100 appearances,Mean rank,Best rank,Mean posterior preknowledge probability,Minimum posterior preknowledge probability
+albaddawi/deepcode-7b-aurora,21,119,45.80672268907563,2,1.0,1.0
+4season/alignment-model-test,19,40,45.275,1,1.0,1.0
+0-hero/matter-0-2-32b,19,33,51.90909090909091,9,1.0,1.0
+aa051611/a0118,17,42,55.0,1,1.0,1.0
+causallm/35b-beta2ep,16,35,45.97142857142857,4,1.0,1.0
+azure99/blossom-1-yi-34b,16,35,60.114285714285714,4,1.0,1.0
+apmic/caigun-lora-model-34b,15,25,42.52,1,1.0,1.0
+changgil/k2s3-solar-11b-0,15,23,44.34782608695652,1,1.0,1.0
+chih-hung/llama-2-13b-finetune4,14,30,55.93333333333333,3,1.0,1.0
+causallm/7b-dpo-alpha,14,20,37.7,3,1.0,1.0

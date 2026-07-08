@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bayes-irt-gsm8k"
+version = "0.1.0"
+description = "Bayesian IRT models for GSM8K benchmark contamination screening."
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "pyro-ppl",
+    "torch",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+bayes-irt-gsm8k = "bayes_irt_gsm8k.cli:main"
+bayes-irt-gsm8k-suite = "bayes_irt_gsm8k.suite:main"
+bayes-irt-gsm8k-report = "bayes_irt_gsm8k.report:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

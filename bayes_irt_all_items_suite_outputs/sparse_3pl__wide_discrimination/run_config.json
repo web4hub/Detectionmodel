@@ -1,0 +1,43 @@
+{
+  "run_name": "sparse_3pl__wide_discrimination",
+  "prior_name": "wide_discrimination",
+  "model": {
+    "kind": "sparse_3pl",
+    "difficulty_sd": 2.0,
+    "discrimination_log_mean": 0.0,
+    "discrimination_log_sd": 0.8,
+    "lower_asymptote_alpha": 0.5,
+    "lower_asymptote_beta": 30.0,
+    "base_contamination_rate": 0.01,
+    "contamination_logit_sd": 1.0,
+    "exposure_effect_sd": 0.75,
+    "tau": 0.99,
+    "probability_epsilon": 1e-06
+  },
+  "fit": {
+    "steps": 1000,
+    "learning_rate": 0.03,
+    "batch_size": 50000,
+    "seed": 123,
+    "device": "cpu",
+    "progress": false
+  },
+  "train_metrics": {
+    "n_obs": 6570896,
+    "log_likelihood": -2379188.5,
+    "mean_log_likelihood": -0.36207976937294006,
+    "brier": 0.11564705520868301,
+    "accuracy_0_5": 0.8327672481536865,
+    "observed_mean": 0.4049103856086731,
+    "predicted_mean": 0.40534132719039917
+  },
+  "holdout_metrics": {
+    "n_obs": 730100,
+    "log_likelihood": -264763.125,
+    "mean_log_likelihood": -0.36263954639434814,
+    "brier": 0.11578014492988586,
+    "accuracy_0_5": 0.8323010802268982,
+    "observed_mean": 0.40364333987236023,
+    "predicted_mean": 0.40458738803863525
+  }
+}

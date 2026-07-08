@@ -1,0 +1,43 @@
+{
+  "run_name": "2pl__wide_discrimination",
+  "prior_name": "wide_discrimination",
+  "model": {
+    "kind": "2pl",
+    "difficulty_sd": 2.0,
+    "discrimination_log_mean": 0.0,
+    "discrimination_log_sd": 0.8,
+    "lower_asymptote_alpha": 0.5,
+    "lower_asymptote_beta": 30.0,
+    "base_contamination_rate": 0.01,
+    "contamination_logit_sd": 1.0,
+    "exposure_effect_sd": 0.75,
+    "tau": 0.99,
+    "probability_epsilon": 1e-06
+  },
+  "fit": {
+    "steps": 1000,
+    "learning_rate": 0.03,
+    "batch_size": 50000,
+    "seed": 123,
+    "device": "cpu",
+    "progress": false
+  },
+  "train_metrics": {
+    "n_obs": 6570896,
+    "log_likelihood": -2382831.5,
+    "mean_log_likelihood": -0.36263418197631836,
+    "brier": 0.11594965308904648,
+    "accuracy_0_5": 0.8323678970336914,
+    "observed_mean": 0.4049103856086731,
+    "predicted_mean": 0.40574416518211365
+  },
+  "holdout_metrics": {
+    "n_obs": 730100,
+    "log_likelihood": -265242.5625,
+    "mean_log_likelihood": -0.3632962107658386,
+    "brier": 0.11609701067209244,
+    "accuracy_0_5": 0.8319161534309387,
+    "observed_mean": 0.40364333987236023,
+    "predicted_mean": 0.4050653874874115
+  }
+}

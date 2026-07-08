@@ -1,0 +1,22 @@
+# Raw third-party data, not redistributed
+benchmark-data/
+*.tar.gz
+
+# py-irt intermediates and logs
+irt_out/
+irt_train.log
+*.jsonlines
+bayes_irt_outputs/
+bayes_irt_smoke_outputs/
+bayes_irt_suite_outputs/
+bayes_irt_suite_smoke_outputs/
+
+# Defunct mapping artifact from an abandoned approach
+gsm8k_item_to_canon.csv
+
+# Python and notebook cruft
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.pytest_cache/
+tmp/

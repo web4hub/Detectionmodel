@@ -1,0 +1,43 @@
+{
+  "run_name": "hier_1pl__wide_difficulty",
+  "prior_name": "wide_difficulty",
+  "model": {
+    "kind": "hier_1pl",
+    "difficulty_sd": 3.0,
+    "discrimination_log_mean": 0.0,
+    "discrimination_log_sd": 0.5,
+    "lower_asymptote_alpha": 0.5,
+    "lower_asymptote_beta": 30.0,
+    "base_contamination_rate": 0.01,
+    "contamination_logit_sd": 1.0,
+    "exposure_effect_sd": 0.75,
+    "tau": 0.99,
+    "probability_epsilon": 1e-06
+  },
+  "fit": {
+    "steps": 1000,
+    "learning_rate": 0.03,
+    "batch_size": 50000,
+    "seed": 123,
+    "device": "cpu",
+    "progress": false
+  },
+  "train_metrics": {
+    "n_obs": 6570896,
+    "log_likelihood": -2453903.75,
+    "mean_log_likelihood": -0.3734503984451294,
+    "brier": 0.11860194802284241,
+    "accuracy_0_5": 0.8306229710578918,
+    "observed_mean": 0.4049103856086731,
+    "predicted_mean": 0.40513119101524353
+  },
+  "holdout_metrics": {
+    "n_obs": 730100,
+    "log_likelihood": -272928.875,
+    "mean_log_likelihood": -0.37382397055625916,
+    "brier": 0.11867034435272217,
+    "accuracy_0_5": 0.8304547071456909,
+    "observed_mean": 0.40364333987236023,
+    "predicted_mean": 0.4044358730316162
+  }
+}

@@ -1,0 +1,11 @@
+Factor,Levels,Rationale
+N models,"500, 2,000, 6,000",Tests scaling from small audit to metabench scale.
+I items,"50, 200, 1,200",Separates small audit and full-benchmark regimes.
+Family clustering,"none, moderate, strong",Controls dependence among related checkpoints.
+Contamination rate,"0, 0.5%, 2%, 5%, 10%",Includes null and sparse-to-moderate leakage.
+Contamination topology,"cell, item, model, family, crossed",Matches competing substantive mechanisms.
+Contamination strength tau,"0.85, 0.95, 0.99",Allows imperfect memorization or formatting failures.
+Latent dimensionality,"1D, 2D nuisance skill",Tests false positives under unmodeled subskills.
+Answer noise,"0%, 2%, 5%",Mimics extraction and generation errors.
+Replications,100 per core cell,Targets Monte Carlo SE below .02 for classification metrics.
+Evaluation,"AUC, PR-AUC, precision@k, recall@k, calibration, RMSE, coverage, false positives","Connects classification, prediction, and parameter recovery."

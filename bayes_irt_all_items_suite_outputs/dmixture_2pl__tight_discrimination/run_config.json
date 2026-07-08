@@ -1,0 +1,43 @@
+{
+  "run_name": "dmixture_2pl__tight_discrimination",
+  "prior_name": "tight_discrimination",
+  "model": {
+    "kind": "dmixture_2pl",
+    "difficulty_sd": 2.0,
+    "discrimination_log_mean": 0.0,
+    "discrimination_log_sd": 0.3,
+    "lower_asymptote_alpha": 0.5,
+    "lower_asymptote_beta": 30.0,
+    "base_contamination_rate": 0.01,
+    "contamination_logit_sd": 1.0,
+    "exposure_effect_sd": 0.75,
+    "tau": 0.99,
+    "probability_epsilon": 1e-06
+  },
+  "fit": {
+    "steps": 1000,
+    "learning_rate": 0.03,
+    "batch_size": 50000,
+    "seed": 123,
+    "device": "cpu",
+    "progress": false
+  },
+  "train_metrics": {
+    "n_obs": 6570896,
+    "log_likelihood": -2301775.0,
+    "mean_log_likelihood": -0.3502984941005707,
+    "brier": 0.11152993887662888,
+    "accuracy_0_5": 0.8392764329910278,
+    "observed_mean": 0.4049103856086731,
+    "predicted_mean": 0.40384984016418457
+  },
+  "holdout_metrics": {
+    "n_obs": 730100,
+    "log_likelihood": -256837.125,
+    "mean_log_likelihood": -0.35178348422050476,
+    "brier": 0.11201560497283936,
+    "accuracy_0_5": 0.8384727835655212,
+    "observed_mean": 0.40364333987236023,
+    "predicted_mean": 0.403166264295578
+  }
+}

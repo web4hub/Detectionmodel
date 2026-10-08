@@ -1,3 +1,5 @@
+hf download openai/gsm8k --repo-type=dataset
+
 PYTHONPATH=src python3 -m bayes_irt_gsm8k.suite \
   --data-dir . \
   --item-mode all \

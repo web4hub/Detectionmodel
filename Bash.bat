@@ -1,3 +1,4 @@
+python3 -m pytest -q
 PYTHONPATH=src python3 -m bayes_irt_gsm8k.cli \
   --data-dir . \
   --model dmixture_family_2pl \

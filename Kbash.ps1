@@ -12,3 +12,5 @@ PYTHONPATH=src python3 -m bayes_irt_gsm8k.suite \
   --output-dir bayes_irt_all_items_suite_outputs \
   --top-n 1000
 PYTHONPATH=src python3 -m bayes_irt_gsm8k.report bayes_irt_suite_outputs --top-k 100
+
+
